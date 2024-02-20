@@ -1,0 +1,20 @@
+export const vinRegex = '^[0-9a-zA-Z]{0,17}$';
+export const licenceRegex = '^[0-9a-zA-Z]{0,50}$';
+export const assetRegex = '^[0-9a-zA-Z-]{0,50}$';
+export const trailerRegex = '^[0-9a-zA-Z-]{0,50}$';
+export const doorSensorMacRegex = /^(a4(:?)da|80(:?)6f|24(:?)9f|74(:?)d2)((:?)[a-f0-9]{2}){4}$/i;
+export const rexRegex = '^01622\\d{15}$';
+export const tpmRegex = /^(5[a-fA-F0-9]{7}|05[a-fA-F0-9]{6})$|^ff$/i;
+export const hubRegex = '^(01519||01797)\\d{20}$';
+export const hexadecimalRegex = /^[a-fA-F0-9]+$/;
+export const macAddressRegex = '^(([a-fA-F0-9]{2})(:?)){5}[a-fA-F0-9]{2}$';
+
+export const vinTest = (str) => new RegExp(vinRegex).test(str);
+export const licenceTest = (str) => new RegExp(licenceRegex).test(str);
+export const assetTest = (str) => new RegExp(assetRegex).test(str);
+export const trailerTest = (str) => new RegExp(trailerRegex).test(str);
+export const doorSensorMacTest = (str) => new RegExp(macAddressRegex).test(str);
+export const rexTest = (str) => new RegExp(rexRegex).test(str);
+export const tpmTest = (str) => new RegExp(tpmRegex).test(str);
+export const hubTest = (str) => new RegExp(hubRegex).test(str);
+export const hexadecimalTest = (str) => new RegExp(hexadecimalRegex).test(str);

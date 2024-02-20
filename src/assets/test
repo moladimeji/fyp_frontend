@@ -1,0 +1,60 @@
+{'EventId': '1939e8f9-e2ea-429b-82ca-ce098c8ccc72', 'EventName': 'CreateBucket', 'ReadOnly': 'false', 'AccessKeyId': 'ASIAUMVLOAFAW4GXRFHS', 'EventTime': datetime.datetime(2023,
+    10,
+    25,
+    18,
+    28,
+    28, tzinfo=tzlocal()), 'EventSource': 's3.amazonaws.com', 'Username': 'No_Access', 'Resources': [
+        {'ResourceType': 'AWS: :S3: :Bucket', 'ResourceName': 'testbucketperson'
+        }
+    ], 'CloudTrailEvent': '{
+        "eventVersion": "1.09",
+        "userIdentity": {
+            "type": "IAMUser",
+            "principalId": "AIDAUMVLOAFASIBGKQKML",
+            "arn": "arn:aws:iam::302080983361:user/No_Access",
+            "accountId": "302080983361",
+            "accessKeyId": "ASIAUMVLOAFAW4GXRFHS",
+            "userName": "No_Access",
+            "sessionContext": {
+                "attributes": {
+                    "creationDate": "2023-10-25T17:26:48Z",
+                    "mfaAuthenticated": "false"
+                }
+            }
+        },
+        "eventTime": "2023-10-25T17:28:28Z",
+        "eventSource": "s3.amazonaws.com",
+        "eventName": "CreateBucket",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "31.220.193.153",
+        "userAgent": "[S3Console/0.4, aws-internal/3 aws-sdk-java/1.12.488 Linux/5.10.196-163.744.amzn2int.x86_64 OpenJDK_64-Bit_Server_VM/25.372-b08 java/1.8.0_372 vendor/Oracle_Corporation cfg/retry-mode/standard]",
+        "errorCode": "AccessDenied",
+        "errorMessage": "Access Denied",
+        "requestParameters": {
+            "bucketName": "testbucketperson",
+            "Host": "s3.amazonaws.com"
+        },
+        "responseElements": null,
+        "additionalEventData": {
+            "SignatureVersion": "SigV4",
+            "CipherSuite": "ECDHE-RSA-AES128-GCM-SHA256",
+            "bytesTransferredIn": 0,
+            "AuthenticationMethod": "AuthHeader",
+            "x-amz-id-2": "4t8eXF65YFDhYePnjBBN4ckVHGuSrmuJqr1vb2Sk7tbanJe8yRg05fjZDqZ4R5bQASbGGcKP+xY=",
+            "bytesTransferredOut": 243
+        },
+        "requestID": "NZRNM23NHSKR3AW2",
+        "eventID": "1939e8f9-e2ea-429b-82ca-ce098c8ccc72",
+        "readOnly": false,
+        "eventType": "AwsApiCall",
+        "managementEvent": true,
+        "recipientAccountId": "302080983361",
+        "vpcEndpointId": "vpce-f40dc59d",
+        "eventCategory": "Management",
+        "tlsDetails": {
+            "tlsVersion": "TLSv1.2",
+            "cipherSuite": "ECDHE-RSA-AES128-GCM-SHA256",
+            "clientProvidedHostHeader": "s3.amazonaws.com"
+        }
+    }'
+}
